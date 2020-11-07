@@ -1,0 +1,346 @@
+
+/* import fonts from fonts.css file */ 
+@import url(./fonts.css);
+
+
+/* css variables */ 
+@import url(./partials/_variables.css);
+
+/* import global styling */ 
+@import url(./partials/_global.css);
+
+/* import global styling */
+@import url(./partials/_global.css);
+
+
+
+/* start navigation */ 
+.header_area .main-menu .navbar .navbar-brand{
+    padding: 0 2rem 0 5rem;
+}
+
+.header_area .main-menu .navbar{
+    padding: 1rem 20rem ;
+}
+
+.header_area .main-menu .nav-item .nav-link{
+    font-family: 'Courier New', Courier, monospace;
+    text-transform: uppercase;
+    padding: 1.7rem;
+    color: var(--title-color);
+}
+
+.header_area .main-menu .navbar-nav .active a{
+    background-color: peru;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.header_area .main-menu .navbar-nav a:hover{
+    background-color: peru;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+/* End navigation */ 
+
+
+
+/* Banner Area */
+.site-main .site-banner {
+    background: url(../img/Hoodoo.JPG) no-repeat 30% 30%;
+}
+
+.site-main .site-banner .site-title h3 {
+    padding-top:35%;
+    font-weight: 500;
+}
+
+
+.site-main .site-banner .site-title h3::after{
+    content: " ";
+    height: 2px;
+    width: 18vw;
+    background: black;
+    display: inline-block;
+    margin-left: 5%;
+    transform: translateY(-10px);
+}
+
+.site-main .site-banner .site-title h1{
+    font-size: 4rem;
+}
+
+.site-main .site-banner .site-title h4{
+    font-size: 1.5 rem;
+}
+
+.site-main .site-banner .banner-image > img{
+    padding: 7rem 0;
+    width: 90rem;
+}
+/* End Banner Area */
+
+
+
+/* Start About Area */
+.site-main .about-area {
+    /*background: url(../img/Banner.JPG) no-repeat 30% 30%;*/
+    background-image: 
+        linear-gradient(
+            white, ivory
+        );
+}
+
+.site-main .about-area{
+    padding: 8rem 5rem;
+}
+
+.site-main .about-area .about-title h2 > span{
+    display:block;
+    font-size: 3rem;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+    letter-spacing: 21px;
+
+}
+
+
+.site-main .about-area .about-title .paragraph > p{
+    padding: .4rem 0;
+}
+/* End About Area */
+
+
+
+/* Start Services Area*/
+#services {
+    background-image: linear-gradient(ivory, mintcream);
+    padding: 45px 0px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.container{
+    width: 90%;
+    max-width: 120 rem;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+    text-align: center;
+}
+
+.site-main .section-heading h1{
+    font-size: 3.5 rem;
+    color: black;
+    text-transform: uppercase;
+    font-weight: 300;
+    position: relative;
+    font-weight: bold;
+}
+
+
+.my-skills{
+    margin-top: 3rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, lfr));
+    grid-gap: 2.5rem;
+    text-align: center;
+}
+
+
+.site-main .section-heading h1::before,
+.site-main .section-heading h1::after{
+    content: '';
+    position: absolute;
+    bottom: -.5 rem;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: black;
+}
+
+
+.site-main .section-heading h1::before{
+    width: 10 rem;
+    height: 3px;
+    color: black;
+
+}
+
+
+.site-main .section-heading h6{
+    font-size: 1.5 rem;
+    font-weight: 300;
+    color: black;
+}
+/* End Services Area*/
+
+
+
+/*Certifications and Skills Area */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+   background-image: linear-gradient(mintcream, azure);
+}
+
+body {
+    color: #272727;
+    font-family: 'Courier New', Courier, monospace;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 0;
+   /* padding: 1rem;*/
+  }
+
+.main{
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+h3 {
+    font-size: 40px;
+    font-weight: bolder;
+    text-align: center;
+}
+
+img {
+  height: auto;
+  max-width: 100%;
+  vertical-align:middle;
+}
+
+/*.btn {
+  color: #ffffff;
+  padding: 0.8rem;
+  font-size: 14px;
+  text-transform: uppercase;
+  border-radius: 4px;
+  font-weight: 400;
+  display: block;
+  width: 100%;
+  cursor: pointer;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: transparent;
+}
+
+.btn:hover {
+  background-color: rgba(255, 255, 255, 0.12);
+}*/
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.cards_item {
+  display: flex;
+  padding: 1rem;
+}
+
+@media (min-width: 40rem) {
+  .cards_item {
+    width: 50%;
+  }
+}
+
+@media (min-width: 56rem) {
+  .cards_item {
+    width: 33.3333%;
+  }
+}
+
+.card {
+  background-color: white;
+  border-radius: 0.25rem;
+  box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.card_content {
+  padding: 1rem;
+  /*background: linear-gradient(to bottom left, #EF8D9C 40%, #FFC39E 100%);*/
+  background: linear-gradient(to bottom left, darkslategray, lightslategray);
+}
+
+.card_title {
+  color: #ffffff;
+  font-size: 1.1rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: capitalize;
+  margin: 0px;
+}
+
+.card_text {
+  color: #ffffff;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  margin-bottom: 1.25rem;    
+  font-weight: 400;
+}
+/* End Certifications and Skills Area */
+
+
+
+/* Start Hobbies Area */
+.gallery{
+    padding-top: 100px;
+    padding-bottom: 100px;;
+}
+
+.project-area h1{
+    font-weight: bold;
+}
+
+
+.project-area h4{
+    font-size: 0.875rem;
+}
+/* End Hobbies Area */
+
+
+
+/* Start Contact Area */
+footer.footer-area{
+    padding: 5rem 0;
+    background: url(../img/Yosemite.JPG) no-repeat 50% 70%;
+    color: black;
+}
+
+.footer-area h2 > span{
+    display:block;
+    font-size: 3rem;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+    letter-spacing: 21px;
+}
+
+footer.footer-area .social h5{
+    font: normal 500 23px/ 30px var(--roboto);
+    color: black;
+}
+
+footer.footer-area .para{
+    color: black;
+}
+
+footer.footer-area .social a > i{
+    font-size:22px;
+    padding: 2rem;
+    color: black;
+}
+
+footer.footer-area .social a:hover > i{
+    color: peru;
+}
+/* End Contact */ 
