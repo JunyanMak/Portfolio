@@ -37,11 +37,22 @@
     background-clip: text;
 }
 
+.active {
+    background-color: peru;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
 .header_area .main-menu .navbar-nav a:hover{
     background-color: peru;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
+}
+
+.fixed-top {
+    transition: 500ms ease !important;
 }
 /* End navigation */ 
 
@@ -78,7 +89,7 @@
 
 .site-main .site-banner .banner-image > img{
     padding: 7rem 0;
-    width: 90rem;
+    width: 400px;
 }
 /* End Banner Area */
 
@@ -127,7 +138,6 @@
     height: 100%;
     margin: 0 auto;
     position: relative;
-    text-align: center;
 }
 
 .site-main .section-heading h1{
@@ -145,7 +155,10 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(25rem, lfr));
     grid-gap: 2.5rem;
-    text-align: center;
+}
+
+.my-skills img {
+    width: 100%;
 }
 
 
@@ -295,7 +308,7 @@ img {
 /* Start Hobbies Area */
 .gallery{
     padding-top: 100px;
-    padding-bottom: 100px;;
+    padding-bottom: 100px;
 }
 
 .project-area h1{
@@ -344,3 +357,12 @@ footer.footer-area .social a:hover > i{
     color: peru;
 }
 /* End Contact */ 
+
+/*extra css*/
+.padding-top-100 {
+    padding-top: 100px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
